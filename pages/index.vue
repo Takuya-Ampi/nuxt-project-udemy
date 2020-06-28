@@ -8,7 +8,12 @@
         <li v-for="user in users" :key="user.id">{{ user.id }}, {{ user.name }},{{ user.company.name }};</li>
       </ul> -->
       <!-- <img src="~/assets/cat.jpg" alt=""> -->
-      <p>{{ $store.state.message }};</p>
+
+      <!-- vuex -->
+      <!-- vuex stateの参照 -->
+      <p>{{ $store.state.message }}</p>
+      <!-- vuex stateの更新(ミューテーション) -->
+      <button @click="$store.commit('updateMessage')">Update</button>
     </div>
   </section>
 </template>
