@@ -3,6 +3,12 @@
     <nuxt />
   </div>
 </template>
+<script>
+// 関係性
+// app.html(APP部分でdefault.vueを読み込む)
+// layouts/default.vue(<nuxt />部分でpages/index.vue等を読み込む)
+// pages/index.vue等
+</script>
 
 <style>
 html {
