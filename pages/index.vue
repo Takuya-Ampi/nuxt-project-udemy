@@ -16,4 +16,7 @@ export default {
 </script>
 
 <style>
+p {
+  font-family: 'A-OTF Ryumin Pro';
+}
 </style>
