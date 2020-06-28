@@ -11,7 +11,7 @@
 
       <!-- vuex -->
       <!-- vuex stateの参照 -->
-      <p>{{ $store.state.message }}</p>
+      <!-- <p>{{ $store.state.message }}</p> -->
       <!-- vuex stateの更新(ミューテーション) -->
       <!-- <button @click="$store.commit('updateMessage')">Update</button> -->
 
@@ -21,7 +21,12 @@
 
       <!-- vuex stateの更新(アクション) -->
       <!-- <button @click="$store.dispatch('updateMessageAction')">Dispatch</button> -->
-      <button @click="$store.dispatch('updateMessageAction', 'Dispatch with payload')">Dispatch</button>
+      <!-- <button @click="$store.dispatch('updateMessageAction', 'Dispatch with payload')">Dispatch</button> -->
+
+      <!-- カウンターアプリの作成 -->
+      <Counter></Counter>
+      <Counter></Counter>
+      <Counter></Counter>
 
     </div>
   </section>
@@ -30,6 +35,9 @@
 <script>
 // const axios = require("axios");
 // let url = "https://jsonplaceholder.typicode.com/usersxxx";
+
+// カウンターアプリの作成
+import Counter from '~/components/Counter.vue'
 
 export default {
   // asyncData({ params, error }) {
@@ -44,6 +52,11 @@ export default {
   //       error({users: e.response.status, message: 'error!!!!!'})
   //     }))
   // }
+
+  // カウンターアプリの作成
+  components: {
+    Counter
+  }
 };
 </script>
 
