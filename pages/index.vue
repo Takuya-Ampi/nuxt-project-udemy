@@ -4,30 +4,31 @@
     <router-link to="/price">Price Page</router-link>-->
     <div>
       <!-- {{ users[0].id }}, {{ users[0].name }} -->
-      <ul>
+      <!-- <ul>
         <li v-for="user in users" :key="user.id">{{ user.id }}, {{ user.name }},{{ user.company.name }};</li>
-      </ul>
+      </ul> -->
+      <img src="~/assets/cat.jpg" alt="">
     </div>
   </section>
 </template>
 
 <script>
-const axios = require("axios");
-let url = "https://jsonplaceholder.typicode.com/usersxxx";
+// const axios = require("axios");
+// let url = "https://jsonplaceholder.typicode.com/usersxxx";
 
 export default {
-  asyncData({ params, error }) {
-    return axios.get(url)
-      .then((res) => {
-        // users:はマスタッシュ構文で表示するために設定
-        return { users: res.data }
-      })
-      .catch((e => {
-        // console.log(e.response.status);
-        // error({users: e.response.status, message: e.message})
-        error({users: e.response.status, message: 'error!!!!!'})
-      }))
-  }
+  // asyncData({ params, error }) {
+  //   return axios.get(url)
+  //     .then((res) => {
+  //       // users:はマスタッシュ構文で表示するために設定
+  //       return { users: res.data }
+  //     })
+  //     .catch((e => {
+  //       // console.log(e.response.status);
+  //       // error({users: e.response.status, message: e.message})
+  //       error({users: e.response.status, message: 'error!!!!!'})
+  //     }))
+  // }
 };
 </script>
 
