@@ -13,7 +13,9 @@
       <!-- vuex stateの参照 -->
       <p>{{ $store.state.message }}</p>
       <!-- vuex stateの更新(ミューテーション) -->
-      <button @click="$store.commit('updateMessage')">Update</button>
+      <!-- <button @click="$store.commit('updateMessage')">Update</button> -->
+      <!-- vuex stateの更新(ミューテーション,値渡し[payload]) -->
+      <button @click="$store.commit('updateMessage', 'Commit with payload')">Update</button>
     </div>
   </section>
 </template>
