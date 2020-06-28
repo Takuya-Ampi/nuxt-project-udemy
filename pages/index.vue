@@ -3,7 +3,10 @@
     <!-- <p>{{ message }}</p>
     <router-link to="/price">Price Page</router-link>-->
     <div>
-      {{ users[0].id }}, {{ users[0].name }}
+      <!-- {{ users[0].id }}, {{ users[0].name }} -->
+      <ul>
+        <li v-for="user in users" :key="user.id">{{ user.id }}, {{ user.name }},{{ user.company.name }};</li>
+      </ul>
     </div>
   </section>
 </template>
